@@ -1,5 +1,12 @@
-const SignIn = () => {
-  return;
-  <div></div>;
+import Left from "../components/Left-login";
+import SignIn from "../components/SignIn";
+
+const SignInPage = () => {
+  return (
+    <div>
+      <SignIn />
+      <Left />
+    </div>
+  );
 };
-export default SignIn;
+export default SignInPage;
