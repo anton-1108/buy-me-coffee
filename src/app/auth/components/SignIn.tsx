@@ -15,6 +15,8 @@ import { useRouter } from "next/navigation";
 import { Form, useForm } from "react-hook-form";
 import { z } from "zod";
 import { InputForm } from "./InputForm";
+import { JapaneseYen } from "lucide-react";
+import { teardownTraceSubscriber } from "next/dist/build/swc/generated-native";
 
 const formSchema = z.object({
   email: z.string().email().min(12, {
